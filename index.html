@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Love Language Quiz</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+.question { margin-bottom: 15px; }
+#result { display: none; margin-top: 20px; }
+textarea { width: 100%; height: 80px; }
+</style>
+</head>
+<body>
+<h1>Love Language Quiz</h1>
+<div id="quiz"></div>
+<button id="submit">Submit</button>
+<div id="result">
+  <h2>Your Results</h2>
+  <pre id="scores"></pre>
+  <button id="copyCode">Copy Share Code</button>
+  <textarea id="shareCode" readonly></textarea>
+  <h3>Compatibility</h3>
+  <p>Paste friend's code to compute compatibility:</p>
+  <textarea id="friendCode"></textarea>
+  <button id="computeCompat">Compute</button>
+  <p id="compatibilityScore"></p>
+  <h3>Statistics</h3>
+  <p>Total tests taken: <span id="statTests"></span></p>
+  <ul id="statTop"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
